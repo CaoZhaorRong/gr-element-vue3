@@ -1,0 +1,50 @@
+{
+  "name": "gr-element-vue3",
+  "private": false,
+  "version": "0.0.3",
+  "type": "module",
+  "author": "zhaorongc",
+  "description": "测试发布npm插件",
+  "keywords": [
+    "vue3",
+    "element-plus",
+    "gr-element-vue3"
+  ],
+  "main": "dist/gr-element.umd.js",
+  "module": "dist/gr-element.es.js",
+  "style": "dist/style.css",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/gr-element.es.js",
+      "require": "./dist/gr-element.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "typings": "dist/packages/index.d.ts",
+  "workspaces": [
+    "packages/**"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.7.7",
+    "vue": "^3.4.15"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0",
+    "vue-tsc": "^1.8.27"
+  }
+}
